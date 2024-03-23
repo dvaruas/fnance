@@ -18,6 +18,6 @@ with app.app_context():
     db.create_all()
     db.session.commit()
 
-    from fapp.controllers import app_mod as fnance
+    from fapp.viewers import app_mod
 
-    app.register_blueprint(fnance)
+    app.register_blueprint(app_mod)
